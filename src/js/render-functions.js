@@ -52,9 +52,12 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  loaderEl.classList.add('is-visible');
+  const loader = document.querySelector('.loader');
+  loader.hidden = false;
 }
 
+
 export function hideLoader() {
-  loaderEl.classList.remove('is-visible');
+  const loader = document.querySelector('.loader');
+  loader.hidden = true;
 }
